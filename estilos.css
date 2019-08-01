@@ -1,9 +1,6 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
   background-color: lightgray;
+  box-sizing: border-box;
   font-family: sans-serif;
   font-size: 16px;
   margin: 0;
@@ -11,7 +8,7 @@ body {
 }
 
 #carrusel-tres-bandas {
-  background: pink;
+  background: gray;
   display: flex;
   height: 100vh;
   overflow: hidden;
@@ -37,39 +34,43 @@ body {
 }
 
 #carrusel-tres-bandas .banda .banner.bannerAa {
-  background-image: url(http://lorempixel.com/800/600/business/1);
+  background-image: url(img/fruit01.jpg);
+  z-index: 2;
 }
 
 #carrusel-tres-bandas .banda .banner.bannerAb {
-  background-image: url(http://lorempixel.com/800/600/business/2);
+  background-image: url(img/fruit02.jpg);
 }
 
 #carrusel-tres-bandas .banda .banner.bannerAc {
-  background-image: url(http://lorempixel.com/800/600/business/3);
+  background-image: url(img/fruit03.jpg);
 }
 
 #carrusel-tres-bandas .banda .banner.bannerBa {
-  background-image: url(http://lorempixel.com/800/600/food/1);
+  background-image: url(img/stairs01.jpg);
 }
 
 #carrusel-tres-bandas .banda .banner.bannerBb {
-  background-image: url(http://lorempixel.com/800/600/food/2);
+  background-image: url(img/stairs02.jpg);
 }
 
 #carrusel-tres-bandas .banda .banner.bannerBc {
-  background-image: url(http://lorempixel.com/800/600/food/3);
+  background-image: url(img/stairs03.jpg);
 }
 
 #carrusel-tres-bandas .banda .banner.bannerCa {
-  background-image: url(http://lorempixel.com/800/600/animals/1);
+  background-image: url(img/candle01.jpg);
+  opacity: 0;
 }
 
 #carrusel-tres-bandas .banda .banner.bannerCb {
-  background-image: url(http://lorempixel.com/800/600/animals/2);
+  background-image: url(img/candle02.jpg);
+  opacity: 0;
 }
 
 #carrusel-tres-bandas .banda .banner.bannerCc {
-  background-image: url(http://lorempixel.com/800/600/animals/3);
+  background-image: url(img/candle03.jpg);
+  opacity: 0;
 }
 
 #bandaC {
@@ -111,4 +112,14 @@ body {
 
 #bandaC a:hover {
   background-color: darkgreen;
+}
+
+/* MODO RESPONSIVO */
+@media (max-width: 575.98px) {
+  #bandaA,#bandaB {
+    display: none;
+  }
+  #bandaC {
+    width: 100% !important;
+  }
 }
