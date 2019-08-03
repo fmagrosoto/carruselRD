@@ -1,0 +1,13 @@
+{
+    "name": "fmagrosoto/carrusel-rd",
+    "description": "Carrusel para RD",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Fernando Magrosoto V.",
+            "email": "fmagrosoto@gmail.com"
+        }
+    ],
+    "require": {}
+}
